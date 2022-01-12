@@ -1,11 +1,13 @@
 Name
 ----
 
-trml2pdf - convert a Report Markup Langage (RML) file to a PDF
+djangoplicity-trml2pdf - convert a Report Markup Langage (RML) file to a PDF
 
 
 Synopsis
 --------
+
+.. code:: python
 
 	trml2pdf --help
 	trml2pdf <input.rml >ouput.pdf
@@ -27,6 +29,8 @@ the standard output.
 Command-line options
 --------------------
 
+.. code:: python
+
 	--help: command line options
 
 Examples
@@ -34,9 +38,13 @@ Examples
 
 Create a PDF file:
 
+.. code:: python
+
 	trml2pdf <input.rml
 
 Use it as a python module:
+
+.. code:: python
 
 	import trml2pdf
 	print trml2pdf.parseString(file('file.rml','r').read())
